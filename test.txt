@@ -1,0 +1,18 @@
+git init			创建初始化git
+git add	test.txt		提交到暂存区
+git add .			将所有文件提交到暂存区
+git status			查看状态（绿色表示在暂存区）
+git rm --cached test.txt	将文件移出暂存区（红色表示在工作区）
+git commit -m "第一次提交"	提交
+				（没有写注释跳进群vim ，按i编辑填写注释，
+				填写完毕按esc跳出，按：wq回去）
+
+git log				查看历史记录
+git reset --hard HEAD^		回退到上一次提交的版本（一个^回退一次
+				用~3回退三次）
+
+git reflog			查看所有记录（包括回退的）
+git reset --hard 504b513	撤销回退 hard后面为标识符（标识符在					reflog里记录的开头）
+
+git reset --soft HEAD^		将退后一次提交回退到暂存区（用于注释写错重					写重新进行commit、用于修复bug减少提交次					数）
+git revert			回退上次提交版本但是log会生成记录
