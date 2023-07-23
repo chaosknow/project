@@ -16,3 +16,13 @@ git reset --hard 504b513	撤销回退 hard后面为标识符（标识符在					
 
 git reset --soft HEAD^		将退后一次提交回退到暂存区（用于注释写错重					写重新进行commit、用于修复bug减少提交次					数）
 git revert			回退上次提交版本但是log会生成记录
+git branch			查看分支（最好不要在master上写代码，创建					master分支写，方便修改master的bug）
+
+git branch ****			创建一个分支 ****为分支名称（切换之前					muster一定要提交完毕 否则回到muster之前写					的没有记录）
+
+git checkout ****		切换分支  ****为分支名称（每次切换工作区要					先add到暂存区，在commit）
+
+git checkout master		切到muster主支
+git merge ****			合并分支到muster上（合并发生冲突 到vscode					进行选择需要更改的版本）
+
+git branch -d ****		删除分支
