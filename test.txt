@@ -26,3 +26,9 @@ git checkout master		切到muster主支
 git merge ****			合并分支到muster上（合并发生冲突 到vscode					进行选择需要更改的版本，或者打开冲突文件选					择留下什么版本，最后在add进去）
 
 git branch -d ****		删除分支
+
+git remote add origin https://github.com/chaosknow/project.git
+让本地库知道远程库的地址
+
+git remote -v 			查看远程库
+git push origin master		把master推到远程库
