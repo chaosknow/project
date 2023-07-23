@@ -23,6 +23,6 @@ git branch ****			创建一个分支 ****为分支名称（切换之前					must
 git checkout ****		切换分支  ****为分支名称（每次切换工作区要					先add到暂存区，在commit）
 
 git checkout master		切到muster主支
-git merge ****			合并分支到muster上（合并发生冲突 到vscode					进行选择需要更改的版本）
+git merge ****			合并分支到muster上（合并发生冲突 到vscode					进行选择需要更改的版本，或者打开冲突文件选					择留下什么版本，最后在add进去）
 
 git branch -d ****		删除分支
