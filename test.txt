@@ -32,3 +32,4 @@ git remote add origin https://github.com/chaosknow/project.git
 
 git remote -v 			查看远程库
 git push origin master		把master推到远程库
+git pull origin master		拉去远程库已更新的代码到本地库
